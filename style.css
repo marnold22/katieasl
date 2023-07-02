@@ -5,13 +5,6 @@
 }
 
 /* COLORS */
-/* :root {
-    --color-1: #ececec;
-    --color-2: #9fd3c7;
-    --color-3: #385170;
-    --color-4: #142d4c;
-} */
-
 :root {
     --color-1: #addfff;
     --color-2: #eaffff;
@@ -21,10 +14,14 @@
 }
 
 section {
-    height: 100vh;
     background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-section:nth-child(even) {
+#resume {
+    background-color: var(--color-2);
+}
+#contact {
     background-color: var(--color-1);
 }
 
@@ -34,6 +31,7 @@ section:nth-child(even) {
 }
 .nav-link {
     font-size: 1.3rem;
+    color: var(--color-3);
 }
 .menu-bg {
     background-color: var(--color-2) !important;
@@ -61,6 +59,14 @@ section:nth-child(even) {
 .home-title {
     font-family: 'Dancing Script', cursive;
     font-size: 8rem;
+    color: var(--color-3);
+}
+
+.about-hd {
+    font-size: 2.75rem;
+}
+.about-text {
+    font-size: 1.2rem;
 }
 
 .footer {
