@@ -4,27 +4,44 @@
     padding: 0;
 }
 
+/* COLORS */
+/* :root {
+    --color-1: #ececec;
+    --color-2: #9fd3c7;
+    --color-3: #385170;
+    --color-4: #142d4c;
+} */
+
+:root {
+    --color-1: #addfff;
+    --color-2: #eaffff;
+    --color-3: #001d36;
+    --color-4: #74777c;
+    --color-5: #e2e2e2;
+}
+
 section {
     height: 100vh;
     background-color: #fff;
 }
 section:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--color-1);
 }
-
-/* COLORS */
 
 /* NAVBAR */
 .nav-logo {
-    width: 25%;
+    width: 100px;
 }
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+.menu-bg {
+    background-color: var(--color-2) !important;
 }
 
 /* HERO-BANNER */
 .home-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/asl-0.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(173, 223, 255, 0.2), rgba(173, 223, 255, 0.2)), url('/images/asl-0.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,7 +56,6 @@ section:nth-child(even) {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: var(--off-white);
 }
 
 .home-title {
@@ -47,8 +63,54 @@ section:nth-child(even) {
     font-size: 8rem;
 }
 
+.footer {
+    background-color: var(--color-3);
+}
+.footer-text {
+    font-size: 1.2rem;
+    color: var(--color-2);
+}
+
+/* MEDIA QUERIES */
+
+/* XXL */
+@media screen and (max-width:1400px) {
+    
+}
+
+/* XL */
+@media screen and (max-width:1200px) {
+    
+}
+
+/* LG */
+@media screen and (max-width:992px) {
+    
+}
+
+/* MD */
+@media screen and (max-width:768px) {
+    
+}
+
+/* SM */
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (max-width: 425px) {
+    .offcanvas {
+        --bs-offcanvas-width: 300px !important;
+    }
+}
+
 @media screen and (max-width: 677px) {
     .home-title {
-        font-size: 4rem;
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-text {
+        font-size: 1rem;
     }
 }
