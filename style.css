@@ -18,6 +18,9 @@ section:nth-child(even) {
 .nav-logo {
     width: 25%;
 }
+.nav-link {
+    font-size: 1.5rem;
+}
 
 /* HERO-BANNER */
 .home-banner {
@@ -42,4 +45,10 @@ section:nth-child(even) {
 .home-title {
     font-family: 'Dancing Script', cursive;
     font-size: 8rem;
+}
+
+@media screen and (max-width: 677px) {
+    .home-title {
+        font-size: 4rem;
+    }
 }
