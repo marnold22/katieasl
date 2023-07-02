@@ -4,7 +4,42 @@
     padding: 0;
 }
 
-/* COLORS */
-:root {
+section {
+    height: 100vh;
+    background-color: #fff;
+}
+section:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
+/* COLORS */
+
+/* NAVBAR */
+.nav-logo {
+    width: 25%;
+}
+
+/* HERO-BANNER */
+.home-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/asl-0.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-content {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--off-white);
+}
+
+.home-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
 }
