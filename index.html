@@ -8,7 +8,7 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-    <!-- BOOTSTRAP 5 CSS -->
+    <!-- BOOTSTRAP 5.2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <section class="home-banner">
+    <section id="home" class="home-banner">
         <nav class="navbar navbar-expand-lg sticky-top py-3 px-5">
             <div class="container-fluid">
                 <a href="/" class="navbar-brand">
@@ -36,7 +36,7 @@
                             <a id="home-anchor-btn" class="nav-link active px-4" aria-current="page">Home</a>
                             <a id="about-anchor-btn" class="nav-link px-4">About</a>
                             <a id="resume-anchor-btn" class="nav-link px-4">Resume</a>
-                            <a id="explore-anchor-btn" class="nav-link px-4">Videos</a>
+                            <a id="videos-anchor-btn" class="nav-link px-4">Videos</a>
                             <a id="contact-anchor-btn" class="nav-link px-4">Contact</a>
                         </ul>
                     </div>
@@ -52,13 +52,13 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                     <h2 class="py-4 text-center about-hd">ABOUT ME</h2>
                     <p class="about-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ex amet aspernatur ratione consequuntur, adipisci nisi! Est facilis rerum, eum debitis fugiat similique corrupti corporis quis ipsa maxime odit placeat.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="ratio ratio-16x9">
                         <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -84,9 +84,55 @@
         </div>
     </div>
 
-    <!-- BOOTSTRAP 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP 5.2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        const myOffcanvas = new bootstrap.Offcanvas('#offcanvasNavbar');
+
+        document.querySelector("#home-anchor-btn").onclick = function () {
+            if($(window).width() <= 991){
+                myOffcanvas.toggle();
+            }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#home").offset().top
+            }, 500);
+        }
+        document.querySelector("#about-anchor-btn").onclick = function () {
+            if($(window).width() <= 991){
+                myOffcanvas.toggle();
+            }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#about").offset().top
+            }, 500);
+        }
+        document.querySelector("#resume-anchor-btn").onclick = function () {
+            if($(window).width() <= 991){
+                myOffcanvas.toggle();
+            }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#resume").offset().top
+            }, 500);
+        }
+        document.querySelector("#videos-anchor-btn").onclick = function () {
+            if($(window).width() <= 991){
+                myOffcanvas.toggle();
+            }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#videos").offset().top
+            }, 500);
+        }
+        document.querySelector("#contact-anchor-btn").onclick = function () {
+            if($(window).width() <= 991){
+                myOffcanvas.toggle();
+            }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        }
+    </script>
 </body>
 </html>
