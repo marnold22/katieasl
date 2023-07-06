@@ -1,18 +1,10 @@
-/* DEFAULTS */
+/* -------------------- DEFAULTS --------------------*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* COLORS */
-/* :root {
-    --color-1: #addfff;
-    --color-2: #eaffff;
-    --color-3: #001d36;
-    --color-4: #74777c;
-    --color-5: #e2e2e2;
-} */
-
+/* -------------------- COLORS -------------------- */
 :root {
     --color-5: #53304e;
     --color-4: #7b3e5c;
@@ -21,14 +13,19 @@
     --color-1: #f6b7a2;
 }
 
-/* DEFAULTS */
-h1, h2, h3, h4, h5, h6 {
+/* -------------------- DEFAULTS -------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Dancing Script', cursive;
 }
 
 section {
     background-color: #fff;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 10rem;
 }
 
@@ -36,25 +33,33 @@ section {
     background-color: var(--color-5);
     color: #fff;
 }
+
+#quote {
+    background-color: var(--color-1);
+}
+
 #videos {
     background-color: var(--color-2);
 }
+
 #contact {
     background-color: var(--color-1);
 }
 
+.purple-font {
+    color: var(--color-4);
+}
 
-
-
-
-/* NAVBAR */
+/* -------------------- NAVBAR -------------------- */
 .nav-logo {
     width: 100px;
 }
+
 .nav-link {
     font-size: 1.3rem;
     /* color: var(--color-3); */
 }
+
 .menu-bg {
     background-color: var(--color-3) !important;
 }
@@ -63,70 +68,47 @@ section {
     position: absolute;
 }
 
-/* HERO-BANNER */
-/* .home-banner {
-    background: linear-gradient(rgba(173, 223, 255, 0.2), rgba(173, 223, 255, 0.2)), url('/images/asl-0.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-} */
-
-/* .home-content {
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-} */
-
-
-
-
-
-
-
-/* HOME BANNER SECTION */
+/* -------------------- HOME BANNER SECTION -------------------- */
 .col-left {
     background-image: url(images/asl-0-cropped.jpg);
     background-size: cover;
     height: 80vh;
 }
+
 .col-right {
     background-color: var(--color-5);
     height: 80vh;
 }
+
 .home-title {
     font-size: 8rem;
     color: #fff;
     padding-top: 15rem;
 }
+
 .home-subtitle {
     font-size: 2rem;
     color: #fff;
 }
+
 .pink-btn {
     background-color: var(--color-3);
-    border: 2px solid #fff;
+    border: 2px solid var(--color-3)
 }
+
 .pink-btn:hover {
     background-color: #fff;
     border: 2px solid #fff;
     color: var(--color-3);
 }
 
-
-
-
-
-/* ASL PICTURE SECTION */
+/* -------------------- ASL PICTURE SECTION -------------------- */
 .parent {
     position: relative;
     top: 0;
     right: 0;
 }
+
 .asl-img-bg {
     background-color: var(--color-1);
     position: relative;
@@ -145,26 +127,63 @@ section {
     border-color: var(--color-4);
 }
 
-
-
-
-
-/* ABOUT SECTION */
+/* -------------------- ABOUT SECTION -------------------- */
 .about-hd {
     font-size: 2.75rem;
 }
+
 .about-text {
     font-size: 1.2rem;
 }
+
 .about-img {
     width: 80%;
 }
 
+/* -------------------- QUOTE SECTION -------------------- */
+.quote-font {
+    font-size: 3rem;
+}
 
+/* -------------------- RESUME SECTION -------------------- */
+.resume-hd {
+    font-size: 2.75rem;
+}
 
+.res-img {
+    width: 100%;
+}
 
+.res-card {
+    transition: all .3s ease-in-out;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
+}
 
-/* CONTACT SECTION */
+.res-card:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.02);
+}
+
+.pink-res-btn {
+    background-color: var(--color-3);
+    border: 2px solid var(--color-3)
+}
+
+.pink-res-btn:hover {
+    background-color: #fff;
+    border: 2px solid var(--color-3);
+    color: var(--color-3);
+}
+
+/* -------------------- VIDEOS SECTION -------------------- */
+.videos-hd {
+    font-size: 2.75rem;
+}
+
+/* -------------------- CONTACT SECTION -------------------- */
+.contact-hd {
+    font-size: 2.75rem;
+}
 
 .contact {
     background-color: var(--color-1);
@@ -201,46 +220,115 @@ input.form-control:focus {
     background-color: var(--color-5);
 }
 
-
-/* FOOTER SECTION */
+/* -------------------- FOOTER SECTION -------------------- */
 .footer {
     background-color: var(--color-5);
 }
+
 .footer-text {
     font-size: 1.2rem;
-    color: var(--color-2);
+    color: #fff;
 }
 
-
-/* MEDIA QUERIES */
-
+/* -------------------- MEDIA QUERIES -------------------- */
 /* XXL */
-@media screen and (max-width:1400px) {
-
-}
+@media screen and (max-width:1400px) {}
 
 /* XL */
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
+    .home-title {
+        font-size: 5rem;
+    }
 
+    .asl-img-bg {
+        min-height: 214px;
+    }
+
+    .asl-img {
+        width: 105%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
 
 /* LG */
 @media screen and (max-width:992px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     .col-left {
         height: 40vh;
         background-size: cover;
         background-position: center;
     }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .asl-img-bg {
+        min-height: 150px;
+    }
+
+    .asl-img {
+        width: 105%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
 
 /* MD */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     
+    .asl-col {
+        height: 60vh;
+    }
+
+    .asl-img-bg {
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .home-title {
+        font-size: 4rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
 }
 
 /* SM */
 @media screen and (max-width:576px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     
+    .asl-col {
+        height: 60vh;
+    }
+
+    .asl-img-bg {
+        min-height: 450px;
+    }
+    
+    .footer-text {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -249,13 +337,18 @@ input.form-control:focus {
     }
 }
 
-@media screen and (max-width: 677px) {
-    .home-title {
-        font-size: 5rem;
+/* XS - ASL SECTION SPECIFICALLY */
+@media screen and (max-width: 415px) {    
+    .asl-col {
+        height: 60vh;
     }
-}
-@media screen and (max-width: 576px) {
-    .footer-text {
-        font-size: 1rem;
+
+    .asl-img-bg {
+        min-height: 350px;
+    }
+
+    .asl-img {
+        width: 100%;
+        position: absolute;
     }
 }
