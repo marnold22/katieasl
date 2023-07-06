@@ -31,10 +31,14 @@ section {
 }
 .nav-link {
     font-size: 1.3rem;
-    color: var(--color-3);
+    /* color: var(--color-3); */
 }
 .menu-bg {
     background-color: var(--color-2) !important;
+}
+
+.navbar-custom {
+    position: absolute;
 }
 
 /* HERO-BANNER */
@@ -61,6 +65,17 @@ section {
     font-size: 8rem;
     color: var(--color-3);
 }
+
+.col-right {
+    background-color: #001d36;
+    height: 80vh;
+}
+.col-left {
+    background-image: url(images/asl-0-cropped.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
 
 .about-hd {
     font-size: 2.75rem;
