@@ -16,41 +16,9 @@
 </head>
 <body>
 
-    <!-- <section id="home" class="home-banner">
-        <nav class="navbar navbar-expand-lg sticky-top py-3 px-5">
-            <div class="container-fluid">
-                <a href="/" class="navbar-brand">
-                    <img src="images/Katie-Logo-2.png" class="nav-logo" alt="'KA' with american sign language symbol">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end menu-bg" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1">
-                            <a id="home-anchor-btn" class="nav-link active px-4" aria-current="page">Home</a>
-                            <a id="about-anchor-btn" class="nav-link px-4">About</a>
-                            <a id="resume-anchor-btn" class="nav-link px-4">Resume</a>
-                            <a id="videos-anchor-btn" class="nav-link px-4">Videos</a>
-                            <a id="contact-anchor-btn" class="nav-link px-4">Contact</a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="text-center home-content">
-            <h1 class="home-title">Katie Arnold</h1>
-        </div>
-    </section> -->
-
     <div id="home" class="home">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark px-5 navbar-custom">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
                 <div class="container-fluid">
                     <a href="/" class="navbar-brand">
                         <img src="images/Katie-Logo-2.png" class="nav-logo" alt="'KA' with american sign language symbol">
@@ -93,20 +61,19 @@
     <section id="asl" class="asl">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4 px-5">
-                    <div class="parent">
-                        <div class="asl-img-bg"></div>
-                        <img class="asl-img " src="/images/signs/sign-4.png" alt="">
-                    </div>
-                    
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 px-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 px-5 asl-col">
                     <div class="parent">
                         <div class="asl-img-bg"></div>
                         <img class="asl-img " src="/images/signs/sign-5.png" alt="">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 px-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 px-5 asl-col">
+                    <div class="parent">
+                        <div class="asl-img-bg"></div>
+                        <img class="asl-img " src="/images/signs/sign-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 px-5 asl-col">
                     <div class="parent">
                         <div class="asl-img-bg"></div>
                         <img class="asl-img " src="/images/signs/sign-6.png" alt="">
@@ -120,35 +87,67 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-7">
-                    <!-- <div class="ratio ratio-16x9">
-                        <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div> -->
-                    <h2 class="py-4 text-center about-hd">ABOUT ME</h2>
+                    <h2 class="py-5 text-center about-hd">ABOUT ME</h2>
                     <p class="about-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ex amet aspernatur ratione consequuntur, adipisci nisi! Est facilis rerum, eum debitis fugiat similique corrupti corporis quis ipsa maxime odit placeat.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reiciendis officiis porro, qui nam provident est perspiciatis cumque, veniam, laboriosam soluta omnis doloribus? Totam debitis officia officiis est, consectetur blanditiis!
                     </p>
-                    <div class="d-grid gap-2 col-4 mx-auto py-4">
+                    <div class="d-grid gap-2 col-6 mx-auto py-4">
                         <a href="#resume" class="btn btn-primary pink-btn" type="button">See my Resume!</a>
                       </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-5">
                     <img src="/images/headshot-1.png" class="rounded mx-auto d-block about-img" alt="...">
-                    
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="quote" class="quote">
+        <div class="container">
+            <h1 class="text-center quote-font">"Kindness is the language which the deaf can hear and the blind can see."</h1>
+        </div>
+    </section>
 
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="py-4 text-center about-hd">RESUME</h2>
+            <h2 class="py-5 text-center resume-hd">RESUME</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 py-4">
+                    <div class="card res-card">
+                        <a href="Resume.pdf" target="_blank">
+                            <img class="res-img" src="/images/resume.png" alt="">
+                            <div class="d-grid gap-2 col-6 mx-auto py-4">
+                                <a href="Resume.pdf" class="btn btn-primary pink-res-btn" type="button" target="_blank">Download Resume!</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 py-4">
+                    <div class="card res-card">
+                        <img src="/images/signs/sign-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="videos" class="videos">
         <div class="container">
-            <h2 class="py-4 text-center about-hd">VIDEOS</h2>
+            <h2 class="py-5 text-center videos-hd">VIDEOS</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 py-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 py-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://player.vimeo.com/video/87110435?h=f253e737bd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -156,8 +155,8 @@
     
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="text-center">CONTACT ME</h2>
-            <form action="#">
+            <h2 class="py-5 text-center contact-hd">CONTACT ME</h2>
+            <form action="POST">
                 <div class="row">
                     <div class="col-md">
                         <div class="mb-3">
@@ -213,6 +212,16 @@
     <script>
 
         $(document).ready(function() {
+            if($(window).width() < 992) {
+                $('#left-col').addClass('order-1');
+                $('#right-col').addClass('order-0');
+            }else {
+                $('#left-col').removeClass('order-1');
+                $('#right-col').removeClass('order-0');
+            }
+        });
+
+        $(window).on("resize", function() {
             if($(window).width() < 992) {
                 $('#left-col').addClass('order-1');
                 $('#right-col').addClass('order-0');
