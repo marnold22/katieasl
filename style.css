@@ -5,25 +5,47 @@
 }
 
 /* COLORS */
-:root {
+/* :root {
     --color-1: #addfff;
     --color-2: #eaffff;
     --color-3: #001d36;
     --color-4: #74777c;
     --color-5: #e2e2e2;
+} */
+
+:root {
+    --color-5: #53304e;
+    --color-4: #7b3e5c;
+    --color-3: #b25b73;
+    --color-2: #f38392;
+    --color-1: #f6b7a2;
+}
+
+/* DEFAULTS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
 }
 
 section {
     background-color: #fff;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
-#resume {
+
+#about {
+    background-color: var(--color-5);
+    color: #fff;
+}
+#videos {
     background-color: var(--color-2);
 }
 #contact {
     background-color: var(--color-1);
 }
+
+
+
+
 
 /* NAVBAR */
 .nav-logo {
@@ -34,7 +56,7 @@ section {
     /* color: var(--color-3); */
 }
 .menu-bg {
-    background-color: var(--color-2) !important;
+    background-color: var(--color-3) !important;
 }
 
 .navbar-custom {
@@ -42,71 +64,173 @@ section {
 }
 
 /* HERO-BANNER */
-.home-banner {
+/* .home-banner {
     background: linear-gradient(rgba(173, 223, 255, 0.2), rgba(173, 223, 255, 0.2)), url('/images/asl-0.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-}
+} */
 
-.home-content {
+/* .home-content {
     margin: 0;
     position: absolute;
     top: 30%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+} */
 
-.home-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 8rem;
-    color: var(--color-3);
-}
 
-.col-right {
-    background-color: #001d36;
-    height: 80vh;
-}
+
+
+
+
+
+/* HOME BANNER SECTION */
 .col-left {
     background-image: url(images/asl-0-cropped.jpg);
     background-size: cover;
     height: 80vh;
 }
+.col-right {
+    background-color: var(--color-5);
+    height: 80vh;
+}
+.home-title {
+    font-size: 8rem;
+    color: #fff;
+    padding-top: 15rem;
+}
+.home-subtitle {
+    font-size: 2rem;
+    color: #fff;
+}
+.pink-btn {
+    background-color: var(--color-3);
+    border: 2px solid #fff;
+}
+.pink-btn:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: var(--color-3);
+}
 
 
+
+
+
+/* ASL PICTURE SECTION */
+.parent {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.asl-img-bg {
+    background-color: var(--color-1);
+    position: relative;
+    top: 0;
+    right: 0;
+    min-height: 344px;
+}
+
+.asl-img {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: var(--color-4);
+}
+
+
+
+
+
+/* ABOUT SECTION */
 .about-hd {
     font-size: 2.75rem;
 }
 .about-text {
     font-size: 1.2rem;
 }
+.about-img {
+    width: 80%;
+}
 
+
+
+
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: var(--color-1);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: var(--color-1);
+    border: none;
+    border-bottom: 1px solid var(--color-5);
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+    box-shadow: none;
+    background-color: var(--color-1);
+    border: none;
+    border-bottom: 1px solid var(--color-5);
+}
+
+.contact-btn {
+    background-color: var(--color-5);
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-4);
+}
+
+.contact-btn:focus,
+.contact-btn:active {
+    background-color: var(--color-5);
+}
+
+
+/* FOOTER SECTION */
 .footer {
-    background-color: var(--color-3);
+    background-color: var(--color-5);
 }
 .footer-text {
     font-size: 1.2rem;
     color: var(--color-2);
 }
 
+
 /* MEDIA QUERIES */
 
 /* XXL */
 @media screen and (max-width:1400px) {
-    
+
 }
 
 /* XL */
 @media screen and (max-width:1200px) {
-    
+
 }
 
 /* LG */
 @media screen and (max-width:992px) {
-    
+    .col-left {
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 /* MD */
