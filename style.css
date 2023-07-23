@@ -180,6 +180,10 @@ section {
     font-size: 2.75rem;
 }
 
+.vp-sidedock {
+    display: none !important;
+}
+
 /* -------------------- CONTACT SECTION -------------------- */
 .contact-hd {
     font-size: 2.75rem;
